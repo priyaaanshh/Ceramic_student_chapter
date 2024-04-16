@@ -1,6 +1,235 @@
-html,
-body,
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/* PADDING CLASSES */
+
+.sc-p-0 {
   padding: 0;
+}
+
+.sc-p-1 {
+    padding: 0.25rem/* 4px */;
+}
+
+.sc-pb-1 {
+    padding-bottom: 0.25rem/* 4px */;
+}
+
+.sc-py-1 {
+    padding-top: 0.25rem/* 4px */;
+    padding-bottom: 0.25rem/* 4px */;
+}
+
+.sc-px-3 {
+  padding-left: 0.75rem /* 12px */;
+  padding-right: 0.75rem /* 12px */;
+}
+
+
+
+
+/* MARGIN CLASSES */
+
+.sc-m-0 {
   margin: 0;
+}
+
+.sc-my-4 {
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+}
+
+.sc-my-5 {
+  margin-top: 1.25rem /* 20px */;
+  margin-bottom: 1.25rem /* 20px */;
+}
+
+.sc-mt-3 {
+  margin-top: 0.75rem /* 12px */;
+}
+
+
+
+
+/* WIDTH CLASSES */
+
+.sc-w-full {
+  width: 100%;
+}
+
+.sc-max-w-1080px {
+  max-width: 1080px;
+}
+
+.sc-max-w-96 {
+    max-width: 24rem/* 384px */;
+}
+
+
+
+
+
+/* BORDER, BORDER RADIUS CLASSES */
+
+.sc-border {
+    border-width: 1px;
+}
+
+.sc-rounded-lg {
+    border-radius: 0.5rem/* 8px */;
+}
+
+.sc-rounded-xl {
+    border-radius: 0.75rem/* 12px */;
+}
+
+
+
+
+
+
+/* DISPLAY CLAESS */
+
+.sc-flex {
+  display: flex;
+}
+
+.sc-grid {
+  display: grid;
+}
+
+
+
+
+
+/* ALIGNMENT CLASSES */
+
+.sc-flex-col {
+  flex-direction: column;
+}
+
+.sc-items-center {
+  align-items: center;
+}
+
+.sc-items-start {
+  align-items: flex-start;
+}
+
+.sc-justify-center {
+  justify-content: center;
+}
+
+.sc-justify-start {
+  justify-content: flex-start;
+}
+
+
+
+
+
+/* TEXT ALIGNMENT CLASSES */
+
+.sc-text-center {
+    text-align: center;
+}
+
+.sc-text-left {
+    text-align: left;
+}
+
+.sc-text-right {
+    text-align: right;
+}
+
+
+
+
+
+
+/* TEXT, TEXT-SIZE, FONT AND FONT STYLE CLASSES */
+
+.sc-font-semibold {
+  font-weight: 600;
+}
+
+.sc-tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.sc-tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.sc-text-sm {
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}
+
+.sc-text-lg {
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+.sc-text-xl {
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+}
+
+.sc-text-4xl {
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+}
+
+
+
+
+
+/* COLOR CLASSES */
+
+.sc-text-gray-600{
+    color: rgb(75, 85, 99);
+}
+
+.sc-text-gray-800 {
+  color: rgb(31, 41, 55);
+}
+
+.sc-text-blue-700 {
+  color: rgb(29, 78, 216);
+}
+
+
+
+
+/* BACKGROUND COLOR CLASSES */
+.sc-bg-slate-50{
+    background-color: rgb(248, 250, 252);
+}
+
+
+
+
+/* OTHERS */
+
+.sc-gap-4 {
+    gap: 1rem/* 16px */;
+}
+
+.sc-grid-cols-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sc-overflow-hidden {
+    overflow: hidden;
+}
+
+.sc-object-contain {
+    object-fit: contain;
 }

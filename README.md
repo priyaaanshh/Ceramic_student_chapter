@@ -1,1 +1,1 @@
-"# Ceramic_student_chapter" 
+# Ceramic_student_chapter
